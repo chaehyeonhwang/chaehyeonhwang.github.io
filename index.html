@@ -1,0 +1,175 @@
+<!DOCTYPE html> <html lang="en"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title> Chaehyeon Hwang </title> <meta name="author" content="Chaehyeon Hwang"> <meta name="description" content="Personal academic page of Chaehyeon Hwang — undergraduate in Electrical &amp; Electronic Engineering and Mathematics. "> <meta name="keywords" content="machine learning, calibration, preference optimization, RLHF, mathematics"> <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' data: https:; media-src 'self' https:; frame-src 'self' https:; connect-src 'self' https:;"> <style>
+  :root {
+    --max-content-width: 930px;
+  }
+</style> <link rel="stylesheet" href="/assets/css/tailwind.css?v=50c64c15cbb9fd1ce6056fdb8bcb4b62"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css" integrity="sha256-MVopmdyC2tYTiJ8wlktf0uh0v4NgT+vNdyVFepi7Q0c=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.5/css/academicons.min.css" integrity="sha256-SzrCOBJbGVFMahewkgjwnApaV2+av1DwMAA+/QGLyZw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/scholar-icons@1.0.3/css/scholar-icons.css" integrity="sha256-VY3hHVj/hNX3fYG6wtbA6TcKJQl7+FthzGSyIB64klY=" crossorigin="anonymous"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap"> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?v=591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%F0%9F%93%90&lt;/text&gt;&lt;/svg&gt;"> <link rel="stylesheet" href="/assets/css/main.css?v=3116ba77db9ee1581d05bb3e86fbf7f1"> <link rel="canonical" href="https://chaehyeonhwang.github.io/"> <script src="/assets/js/theme.js?v=5286c3e4c334d0ecb8fc0c40ff4fa7ec"></script> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-native.css?v=5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark"> <script>
+    initTheme();
+  </script> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item active"> <a class="nav-link" href="/">about <span class="sr-only">(current)</span> </a> </li> <li class="nav-item "> <a class="nav-link" href="/projects/">projects </a> </li> <li class="nav-item "> <a class="nav-link" href="/cv/">CV </a> </li> <li class="nav-item"> <button id="search-toggle" type="button" title="Search" aria-label="Open search"> <span class="nav-link">ctrl k <i class="fa-solid fa-magnifying-glass"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet"> <style>
+  body, .navbar, .footer { font-family: "Instrument Sans", system-ui, -apple-system, "Segoe UI", sans-serif; }
+  .hm { --muted: var(--global-text-color-light); --line: var(--global-divider-color); }
+  .hm a { color: inherit; text-decoration: none; }
+  .hm-tagline { font-size: clamp(1.6rem, 3.4vw, 2.6rem); line-height: 1.18; font-weight: 400; letter-spacing: -0.01em; max-width: 26em; margin: 1.5rem 0 1rem; }
+  .hm-social { display: flex; justify-content: flex-end; gap: 1.1rem; font-size: 1.9rem; padding-bottom: 1rem; border-bottom: 1px solid var(--line); }
+  .hm-social a { color: var(--global-text-color) !important; }
+  .hm-social a:hover { color: var(--global-theme-color) !important; }
+  .hm-grid { display: grid; grid-template-columns: minmax(0, 1fr) 320px; gap: 4.5rem; margin-top: 1.5rem; }
+  .hm h2 { font-size: 2rem; font-weight: 400; margin: 0 0 1.4rem; }
+  .hm h2 .arr { font-size: 1.1rem; vertical-align: middle; margin-left: .3rem; }
+  .hm-section + .hm-section { margin-top: 4rem; }
+  .hm-head, .hm-row { display: grid; grid-template-columns: 80px 48px minmax(0, 1fr) 130px 24px; column-gap: 1rem; }
+  .hm-head { font-size: .85rem; letter-spacing: .08em; text-transform: uppercase; padding-bottom: .5rem; border-bottom: 1px dotted var(--line); }
+  .hm-head span:nth-child(2) { grid-column: 3; }
+  .hm-row { padding: .9rem 0; border-bottom: 1px dotted var(--line); align-items: start; }
+  .hm-date { color: var(--muted); font-size: .9rem; padding-top: .15rem; }
+  .hm-thumb img { width: 42px; height: 26px; object-fit: cover; border-radius: 2px; }
+  .hm-title { font-size: 1.15rem; font-weight: 500; }
+  .hm-sub { font-size: .95rem; margin-top: .1rem; }
+  .hm-authors { color: var(--muted); font-size: .85rem; margin-top: .2rem; }
+  .hm-authors b { color: var(--global-text-color); font-weight: 600; }
+  .hm-venue { font-size: .85rem; font-weight: 600; padding-top: .2rem; }
+  .hm-tags span { font-size: .85rem; font-weight: 600; margin-right: .8rem; white-space: nowrap; }
+  .hm-go { font-size: 1rem; padding-top: .1rem; text-align: right; }
+  .hm-row:hover .hm-title { color: var(--global-theme-color); }
+  .hm-side img { width: 100%; aspect-ratio: 6 / 5; object-fit: cover; display: block; }
+  .hm-side h3 { text-align: right; font-size: 1.6rem; font-weight: 400; margin: 2.2rem 0 1.3rem; }
+  .hm-bio { text-align: left; font-size: .98rem; line-height: 1.6; }
+  .hm-bio strong { font-weight: 600; }
+  .hm-news { margin-top: 2.5rem; font-size: .9rem; }
+  .hm-news h4 { font-size: .85rem; letter-spacing: .08em; text-transform: uppercase; font-weight: 500; margin-bottom: .6rem; }
+  @media (max-width: 900px) {
+    .hm-grid { grid-template-columns: 1fr; gap: 3rem; }
+    .hm-side { order: -1; max-width: 360px; }
+    .hm-side h3 { text-align: left; }
+  }
+  @media (max-width: 600px) {
+    .hm-head { display: none; }
+    .hm-row { grid-template-columns: minmax(0, 1fr) 20px; }
+    .hm-date, .hm-thumb { display: none; }
+    .hm-meta { grid-column: 1; }
+    .hm-go { grid-column: 2; grid-row: 1; }
+  }
+</style> <div class="hm"> <p class="hm-tagline">Fine-tuning changes what a model knows, but also how sure it is. I study how training objectives reshape a model's confidence, and try to describe it with mathematics. </p> <div class="hm-social"> <a href="mailto:you@example.com" title="Email"><i class="fa-solid fa-envelope"></i></a> <a href="https://github.com/chaehyeonhwang" title="Github username" rel="external nofollow noopener" target="_blank"><i class="fa-brands fa-github"></i></a> <a href="/assets/pdf/cv.pdf" title="Cv pdf"><i class="ai ai-cv"></i></a> </div> <div class="hm-grid"> <div> <section class="hm-section"> <h2>Publications</h2> <div class="hm-head"> <span>Date</span><span>Title</span> </div> <a class="hm-row" href="/projects/1_confidence_drift/"> <div class="hm-date">2026</div> <div class="hm-thumb"></div> <div> <div class="hm-title">Confidence Drift under Preference Optimization</div> <div class="hm-sub">Why DPO makes language models more confident without making them more accurate</div> <div class="hm-authors"><b>Chaehyeon Hwang</b></div> </div> <div class="hm-venue hm-meta">In preparation</div> <div class="hm-go">↗</div> </a> </section> <section class="hm-section"> <h2><a href="/projects/">Research &amp; Projects<span class="arr">↗</span></a></h2> <div class="hm-head"> <span>Date</span><span>Project</span> </div> <a class="hm-row" href="/projects/2_whodict/"> <div class="hm-date">2026</div> <div class="hm-thumb"></div> <div> <div class="hm-title">whodict</div> <div class="hm-sub">Consent-based voice conversation app, built solo · KR patent pending</div> </div> <div class="hm-tags hm-meta"> <span># Speech</span><span># App</span> </div> <div class="hm-go">↗</div> </a> <a class="hm-row" href="/projects/3_rl_study/"> <div class="hm-date">2026</div> <div class="hm-thumb"></div> <div> <div class="hm-title">Evolutionary Methods &amp; Q-learning</div> <div class="hm-sub">Undergraduate research, ML/DL Lab, Hankyong National University</div> </div> <div class="hm-tags hm-meta"><span># RL</span></div> <div class="hm-go">↗</div> </a> </section> </div> <aside class="hm-side"> <img src="/assets/img/me.jpg" alt="Chaehyeon Hwang"> <h3>Chaehyeon Hwang</h3> <div class="hm-bio"> <p>I am a third-year undergraduate at <strong>Hankyong National University</strong>, majoring in <strong>Electrical &amp; Electronic Engineering</strong> with a double major in <strong>Mathematics</strong>.</p> <p>I am interested in how fine-tuning reshapes the predictive behavior of language models. Currently, I am studying why <strong>preference optimization (DPO)</strong> makes models more confident without making them more accurate, using controlled experiments and the geometry of the output distribution.</p> <p>I also build things end to end. I designed and shipped <strong>whodict</strong>, a consent-based voice conversation app, on my own and filed a Korean patent application for it. Before that, I worked on genetic algorithms and Q-learning as an undergraduate researcher in the <strong>ML/DL Lab</strong> at my university.</p> <p><strong>Silver Prize</strong>, National University Students’ Mathematics Competition (Korean Mathematical Society).</p> </div> <div class="hm-news"> <h4>News</h4> <div class="news"> <div class="table-responsive"> <table class="table table-sm table-borderless"> <tr> <th scope="row" style="width: 20%">Oct 28, 2026</th> <td> Launched this website. </td> </tr> <tr> <th scope="row" style="width: 20%">Sep 29, 2026</th> <td> Filed a Korean patent application for the voice-verification method behind my app <strong>whodict</strong>. </td> </tr> </table> </div> </div> </div> </aside> </div> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Chaehyeon Hwang. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. </div> </footer> <script>
+  window.alFolio = {
+    compatBootstrap: false
+  };
+</script> <script src="/assets/js/nav-toggle.js?v=141bd79a73ebc0f0b6ea58e440ae79fc"></script> <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script> <script defer src="/assets/js/masonry.js?v=e49affc7bd2646f6acdad1dbe02c2359" type="text/javascript"></script> <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js" integrity="sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI=" crossorigin="anonymous"></script> <script src="/assets/al_math/js/mathjax-setup.js"></script> <script src="/assets/js/tooltips-setup.js?v=fe487e99db6c43751e6e7bdb2d6a0611"></script> <script src="/assets/js/no_defer.js?v=53b1b1a645525975c963ce8bf8bfefcf"></script> <script defer src="/assets/js/common.js?v=87baac90f765f2f3362dcf6aaf312a8a"></script> <script defer src="/assets/js/copy_code.js?v=c8a01c11a92744d44b093fc3bda915df" type="text/javascript"></script> <script defer src="/assets/js/jupyter_new_tab.js?v=896d254890d9b47f0281f63bfccf0dee"></script> <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script> <script async src="https://badge.dimensions.ai/badge.js"></script> <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script> <script defer src="/assets/al_img_tools/js/zoom.js"></script> <script defer src="/assets/js/progress-bar.js?v=499464c5c63ced6cf7ad62509f1e2610" type="text/javascript"></script> <script src="https://cdn.jsdelivr.net/npm/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js" integrity="sha256-uMJJ3EoTyfRBoTbR+lrfu1uRQ87RZG8AR3cVNuQVeFg=" crossorigin="anonymous"></script> <script>
+    addBackToTop();
+  </script> <script type="module" src="/assets/al_search/js/search/ninja-keys.min.js"></script> <ninja-keys hidebreadcrumbs noautoloadmdicons placeholder="Type to start searching"></ninja-keys> <script src="/assets/al_search/js/search-setup.js"></script> <script>
+// get the ninja-keys element
+const ninja = document.querySelector('ninja-keys');
+
+// add the home and posts menu items
+ninja.data = [{
+    id: "nav-about",
+    title: "about",
+    section: "Navigation",
+    handler: () => {
+      window.location.href = "/";
+    },
+  },{id: "nav-projects",
+          title: "projects",
+          description: "Research and things I have built.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/projects/";
+          },
+        },{id: "nav-cv",
+          title: "CV",
+          description: "Curriculum vitae.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/cv/";
+          },
+        },{id: "post-google-gemini-updates-flash-1-5-gemma-2-and-project-astra",
+        
+          title: 'Google Gemini updates: Flash 1.5, Gemma 2 and Project Astra <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+        
+        description: "We’re sharing updates across our Gemini family of models and a glimpse of Project Astra, our vision for the future of AI assistants.",
+        section: "Posts",
+        handler: () => {
+          
+            window.open("https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/", "_blank");
+          
+        },
+      },{id: "post-displaying-external-posts-on-your-al-folio-blog",
+        
+          title: 'Displaying External Posts on Your al-folio Blog <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.open("https://medium.com/@al-folio/displaying-external-posts-on-your-al-folio-blog-b60a1d241a0a?source=rss-17feae71c3c4------2", "_blank");
+          
+        },
+      },{id: "news-filed-a-korean-patent-application-for-the-voice-verification-method-behind-my-app-whodict",
+          title: 'Filed a Korean patent application for the voice-verification method behind my app whodict....',
+          description: "",
+          section: "News",},{id: "news-launched-this-website",
+          title: 'Launched this website.',
+          description: "",
+          section: "News",},{id: "projects-confidence-drift-under-preference-optimization",
+          title: 'Confidence drift under preference optimization',
+          description: "Why does DPO make language models more confident without making them more accurate? (ongoing)",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/1_confidence_drift/";
+            },},{id: "projects-whodict",
+          title: 'whodict',
+          description: "A consent-based voice conversation app — designed, built and shipped solo. Patent pending (KR).",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/2_whodict/";
+            },},{id: "projects-evolutionary-methods-amp-q-learning-for-control",
+          title: 'Evolutionary methods &amp;amp; Q-learning for control',
+          description: "Undergraduate research — genetic algorithms and Q-learning on CartPole and Atari",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/3_rl_study/";
+            },},{
+        id: 'social-email',
+        title: 'email',
+        section: 'Socials',
+        handler: () => {
+          window.open("mailto:%79%6F%75@%65%78%61%6D%70%6C%65.%63%6F%6D", "_blank");
+        },
+      },{
+        id: 'social-github',
+        title: 'GitHub',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://github.com/chaehyeonhwang", "_blank");
+        },
+      },{
+        id: 'social-cv',
+        title: 'CV',
+        section: 'Socials',
+        handler: () => {
+          window.open("/assets/pdf/cv.pdf", "_blank");
+        },
+      },{
+      id: 'light-theme',
+      title: 'Change theme to light',
+      description: 'Change the theme of the site to Light',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("light");
+      },
+    },
+    {
+      id: 'dark-theme',
+      title: 'Change theme to dark',
+      description: 'Change the theme of the site to Dark',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("dark");
+      },
+    },
+    {
+      id: 'system-theme',
+      title: 'Use system default theme',
+      description: 'Change the theme of the site to System Default',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("system");
+      },
+    },];
+
+</script> <script src="/assets/al_search/js/shortcut-key.js"></script> </body> </html>
