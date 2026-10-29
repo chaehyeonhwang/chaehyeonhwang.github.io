@@ -1,0 +1,28 @@
+# Content for the home page (_layouts/home.liquid).
+# Each list item becomes one row. Delete a field you don't need.
+# img: optional small thumbnail, path under assets/img/ (e.g. "thumbs/drift.png")
+# link: where the ↗ arrow goes (page on this site like "/projects/whodict/", or a full URL)
+
+tagline: >
+  Fine-tuning changes what a model knows, but also how sure it is.
+  I study how training objectives reshape a model's confidence, and try to describe it with mathematics.
+
+publications:
+  - date: "2026"
+    title: "Confidence Drift under Preference Optimization"
+    subtitle: "Why DPO makes language models more confident without making them more accurate"
+    authors: "<b>Chaehyeon Hwang</b>"
+    venue: "In preparation"
+    link: "/projects/1_confidence_drift/"
+
+experience:
+  - date: "2026"
+    title: "whodict"
+    subtitle: "Consent-based voice conversation app, built solo · KR patent pending"
+    tags: ["Speech", "App"]
+    link: "/projects/2_whodict/"
+  - date: "2026"
+    title: "Evolutionary Methods & Q-learning"
+    subtitle: "Undergraduate research, ML/DL Lab, Hankyong National University"
+    tags: ["RL"]
+    link: "/projects/3_rl_study/"

@@ -1,0 +1,112 @@
+---
+layout: default
+---
+{%- assign home = site.data.home -%}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  body, .navbar, .footer { font-family: "Instrument Sans", system-ui, -apple-system, "Segoe UI", sans-serif; }
+  .hm { --muted: var(--global-text-color-light); --line: var(--global-divider-color); }
+  .hm a { color: inherit; text-decoration: none; }
+  .hm-tagline { font-size: clamp(1.6rem, 3.4vw, 2.6rem); line-height: 1.18; font-weight: 400; letter-spacing: -0.01em; max-width: 26em; margin: 1.5rem 0 1rem; }
+  .hm-social { display: flex; justify-content: flex-end; gap: 1.1rem; font-size: 1.9rem; padding-bottom: 1rem; border-bottom: 1px solid var(--line); }
+  .hm-social a { color: var(--global-text-color) !important; }
+  .hm-social a:hover { color: var(--global-theme-color) !important; }
+  .hm-grid { display: grid; grid-template-columns: minmax(0, 1fr) 320px; gap: 4.5rem; margin-top: 1.5rem; }
+  .hm h2 { font-size: 2rem; font-weight: 400; margin: 0 0 1.4rem; }
+  .hm h2 .arr { font-size: 1.1rem; vertical-align: middle; margin-left: .3rem; }
+  .hm-section + .hm-section { margin-top: 4rem; }
+  .hm-head, .hm-row { display: grid; grid-template-columns: 80px 48px minmax(0, 1fr) 130px 24px; column-gap: 1rem; }
+  .hm-head { font-size: .85rem; letter-spacing: .08em; text-transform: uppercase; padding-bottom: .5rem; border-bottom: 1px dotted var(--line); }
+  .hm-head span:nth-child(2) { grid-column: 3; }
+  .hm-row { padding: .9rem 0; border-bottom: 1px dotted var(--line); align-items: start; }
+  .hm-date { color: var(--muted); font-size: .9rem; padding-top: .15rem; }
+  .hm-thumb img { width: 42px; height: 26px; object-fit: cover; border-radius: 2px; }
+  .hm-title { font-size: 1.15rem; font-weight: 500; }
+  .hm-sub { font-size: .95rem; margin-top: .1rem; }
+  .hm-authors { color: var(--muted); font-size: .85rem; margin-top: .2rem; }
+  .hm-authors b { color: var(--global-text-color); font-weight: 600; }
+  .hm-venue { font-size: .85rem; font-weight: 600; padding-top: .2rem; }
+  .hm-tags span { font-size: .85rem; font-weight: 600; margin-right: .8rem; white-space: nowrap; }
+  .hm-go { font-size: 1rem; padding-top: .1rem; text-align: right; }
+  .hm-row:hover .hm-title { color: var(--global-theme-color); }
+  .hm-side img { width: 100%; aspect-ratio: 6 / 5; object-fit: cover; display: block; }
+  .hm-side h3 { text-align: right; font-size: 1.6rem; font-weight: 400; margin: 2.2rem 0 1.3rem; }
+  .hm-bio { text-align: left; font-size: .98rem; line-height: 1.6; }
+  .hm-bio strong { font-weight: 600; }
+  .hm-news { margin-top: 2.5rem; font-size: .9rem; }
+  .hm-news h4 { font-size: .85rem; letter-spacing: .08em; text-transform: uppercase; font-weight: 500; margin-bottom: .6rem; }
+  @media (max-width: 900px) {
+    .hm-grid { grid-template-columns: 1fr; gap: 3rem; }
+    .hm-side { order: -1; max-width: 360px; }
+    .hm-side h3 { text-align: left; }
+  }
+  @media (max-width: 600px) {
+    .hm-head { display: none; }
+    .hm-row { grid-template-columns: minmax(0, 1fr) 20px; }
+    .hm-date, .hm-thumb { display: none; }
+    .hm-meta { grid-column: 1; }
+    .hm-go { grid-column: 2; grid-row: 1; }
+  }
+</style>
+
+<div class="hm">
+  <p class="hm-tagline">{{ home.tagline }}</p>
+  <div class="hm-social">{% social_links %}</div>
+
+  <div class="hm-grid">
+    <div>
+      {% if home.publications %}
+      <section class="hm-section">
+        <h2>Publications</h2>
+        <div class="hm-head"><span>Date</span><span>Title</span></div>
+        {% for p in home.publications %}
+        <a class="hm-row" href="{{ p.link | relative_url }}">
+          <div class="hm-date">{{ p.date }}</div>
+          <div class="hm-thumb">{% if p.img %}<img src="{{ p.img | prepend: 'assets/img/' | relative_url }}" alt="">{% endif %}</div>
+          <div>
+            <div class="hm-title">{{ p.title }}</div>
+            {% if p.subtitle %}<div class="hm-sub">{{ p.subtitle }}</div>{% endif %}
+            {% if p.authors %}<div class="hm-authors">{{ p.authors }}</div>{% endif %}
+          </div>
+          <div class="hm-venue hm-meta">{{ p.venue }}</div>
+          <div class="hm-go">↗</div>
+        </a>
+        {% endfor %}
+      </section>
+      {% endif %}
+
+      {% if home.experience %}
+      <section class="hm-section">
+        <h2><a href="{{ '/projects/' | relative_url }}">Research &amp; Projects<span class="arr">↗</span></a></h2>
+        <div class="hm-head"><span>Date</span><span>Project</span></div>
+        {% for e in home.experience %}
+        <a class="hm-row" href="{{ e.link | relative_url }}">
+          <div class="hm-date">{{ e.date }}</div>
+          <div class="hm-thumb">{% if e.img %}<img src="{{ e.img | prepend: 'assets/img/' | relative_url }}" alt="">{% endif %}</div>
+          <div>
+            <div class="hm-title">{{ e.title }}</div>
+            {% if e.subtitle %}<div class="hm-sub">{{ e.subtitle }}</div>{% endif %}
+          </div>
+          <div class="hm-tags hm-meta">{% for t in e.tags %}<span># {{ t }}</span>{% endfor %}</div>
+          <div class="hm-go">↗</div>
+        </a>
+        {% endfor %}
+      </section>
+      {% endif %}
+    </div>
+
+    <aside class="hm-side">
+      {% if page.photo %}<img src="{{ page.photo | prepend: 'assets/img/' | relative_url }}" alt="{{ site.first_name }} {{ site.last_name }}">{% endif %}
+      <h3>{{ site.first_name }} {{ site.last_name }}</h3>
+      <div class="hm-bio">{{ content }}</div>
+      {% if page.show_news %}
+      <div class="hm-news">
+        <h4>News</h4>
+        {% include news.liquid limit=true %}
+      </div>
+      {% endif %}
+    </aside>
+  </div>
+</div>
